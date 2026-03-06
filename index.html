@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammed Kurkcu-CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- Topbar/Navbar -->
+<body>
+    <header class="topbar">
+        <div class="container topbar__inner">
+            <!--Brand:klik brengt je naar boven-->
+            <a class="brand" href="#top">Muhammed Kurkcu</a>
+
+            <!--Hamburger knop (zichtbaar op mobiel )-->
+            <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+                <span class="sr-only">Menu</span>
+            </button>
+            <!--Navigatie links-->
+            <nav class="nav" id="navMenu">
+                <a href="#about">over mij</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projecten</a>
+
+                <!-- Dropdown: “Meer” -->
+                 <div class="dropdown">
+                    <button class="dropdown__btn" id="moreBtn" type="button" aria-expanded="false" aria-controls="moreMenu">
+                      Meer ▾
+                       </button>
+                 <div class="dropdown__menu" id="moreMenu" role="menu">
+                    <a role="menuitem" href="#experience">Ervaring</a>
+                    <a role="menuitem" href="#education">Opleiding</a>
+                    <a role="menuitem" href="#contact">Contact</a>
+                 </div>
+                </div>
+              </nav>
+            </div>
+          </header>
+          <!--Pagina-->
+          <main id="top" class="page">
+            <div class="container layout">
+          
+          <!--Sidebar (CV-achtig)-->
+          <aside class="sidebar card">
+            <h1 class="name">Muhammed Kurkcu</h1>
+            <p class="role muted">Junior Frontend Developer</p>
+
+            <section class="block" aria-labelledby="personaliaTitle">
+            <h2 class="h2" id="personaliaTitle">Personalia</h2>
+            <ul class="kv">
+                <li><span>Email:</span><span>m.m.kurkcu@hotmail.com</span></li>
+                <li><span>Telefoon:</span><span>06-51134556</span></li>
+                <li><span>Woonplaats:</span><span>Hengelo</span></li>
+            </ul>
+            </section>
+
+            <section class="block" aria-labelledby="talenTitle">
+                <h2 class="h2" id="talenTitle">Talen</h2>
+                <ul class="kv">
+                    <li><span>Nederlands: </span><span>Moedertaal</span></li>
+                    <li><span>Engels: </span><span>Sterk</span></li>
+                    <li><span>Turks: </span><span>heel goed</span></li>
+                </ul>
+            </section>
+
+            <section class="block" aria-labelledby="linksTitle">
+                <h2 class="h2" id="linksTitle">Links</h2>
+                <ul class="links">
+                    <li><a class="link" href="#" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a class="link" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        </ul>
+            </section>
+          </aside>
+
+            <!--Content rechts-->
+            <section class="content">
+
+                <section class="card block hero" id="hero" aria-labelledby="heroTitle">
+                    <p class="kicker">Beschikbaar voor junior rollen.</p>
+                    <h2 class="hero__title" id="heroTitle">Ik bouw responsive interfaces en leer JavaScript.</h2>
+                    <p class="muted">
+                        Korte intro: Ik vind 
+frontend development heel leuk en ben altijd op zoek naar nieuwe uitdagingen. Mijn doel is om mijn vaardigheden te verbeteren en een waardevolle bijdrage te leveren aan een team.
+                    </p>
+                    <div class="cta">
+                        <a class="btn" href="#" target="_blank" rel="noopener noreferrer">Download PDF CV</a>
+                        <a class="btn btn--ghost" href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a class="btn btn--ghost" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </div>
+                </section>
+
+                <section class="card block" id="about">
+                    <h2 class="h2">Over mij</h2>
+                    <p class="muted">
+                        Ik focus momenteel: op het verbeteren van mijn vaardigheden in HTML,CSS en JavaScript dat doe ik doormiddel van elke dag oefenen,ik ben heel leergierig ik sta open voor feedback en stel vragen zo leer ik codes beter te begrijpen en mooie projecten op te zetten.
+                         </p>
+                      </section>
+
+                <section class="card block" id="skills">
+                    <h2 class="h2">Skills</h2>
+                <ul class="tags">
+                    <li>HTML</li><li>CSS</li><li>Git</li><li>JavaScript</li><li>GitHub</li><li>VS Code</li>
+                </ul>
+                </section>
+
+                <section class="card block" id="projects">
+                    <h2 class="h2">Projecten</h2>
+
+                    <div class="grid">
+                        <article class="project neon-hover">
+                            <h3 class="h3">CV Website</h3>
+                            <p class="muted">CV als moderne website met sidebar layout en interactieve navbar.</p>
+                            <div class="tagrow">
+                                <span class="pill">HTML</span>
+                                <span class="pill">CSS</span>
+                                <span class="pill">JS</span>
+                            </div>
+                            <div class="actions">
+                                <a class="link" href="#" target="_blank" rel="noopener noreferrer">Live</a>
+                                <a class="link" href="#" target="_blank" rel="noopener noreferrer">Code</a>
+                            </div>
+                        </article>
+                        <article class="project neon-hover">
+                            <h3 class="h3">Volgende project</h3>
+                            <p class="muted">Mastering frontend development,JavaScript,Grid&flexbox leren en bestaande projecten refactoren,en werken met figma.</p>
+                            <div class="tagrow">
+                                <span class="pill">JS</span>
+                            </div>
+                        <div class="actions">
+                            <a class="link" href="#">Coming soon</a>
+                        </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="card block" id="experience">
+                    <h2 class="h2">Ervaring</h2>
+
+                    <article class="item">
+                        <div class="item__top">
+                            <h3 class="h3">Persoonlijke Begeleider ZZP</h3>
+                            <p class="muted">2021 - heden</p>
+                        </div>
+                        <p class="muted">Multizorg Helpende Hand &bull; Hengelo/Enschede</p>
+                    <ul class="bullets">
+                        <li>Sterke communicatie en samenwerking binnen een zorgteam</li>
+                        <li>Probleemoplossend handelen in onverwachte situaties</li>
+                        <li>Nauwkeurig rapporteren en verantwoordelijk omgaan met cliëntinformatie</li>
+                    </ul>
+                    </article>
+                </section>
+
+                <section class="card block" id="education">
+                    <h2 class="h2">Opleiding</h2>
+
+                    <article class="item">
+                        <div class="item__top">
+                            <h3 class="h3">Begeleider specifieke doelgroepen MBO niveau 4</h3>
+                            <span class="muted">2013-2015</span>
+                        </div>
+                        <p class="muted">MBO Amersfoort &bull; Amersfoort</p>
+                    </article>
+                </section>
+                
+                <section class="card block" id="contact">
+                    <h2 class="h2">Contact</h2>
+                    <p class="muted">E-mail: <a class="link" href="mailto:m.m.kurkcu@hotmail.com">m.m.kurkcu@hotmail.com</a></p>
+                </section>
+
+                <footer class="footer muted">
+                    Laatst bijgewerkt: <span id="lastUpdated"></span>
+                </footer>
+            </section>
+        </div>
+    </main>
+                
+  <script src="script.js"></script>  
+</body>
+</html>
