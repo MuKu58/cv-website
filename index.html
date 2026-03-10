@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhammed Kurkcu-CV</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <!-- Topbar/Navbar -->
@@ -45,23 +46,49 @@
           <aside class="sidebar card">
             
             <div class="profile-card">
-                <img src="images/profile-pic.png" alt="profielfoto van Muhammed Kurkcu" class="profile-photo">
-            <h1 class="name">Muhammed Kurkcu</h1>
-            <p class="role muted">Junior Frontend Developer</p>
-            </div>
+    <label for="photoUpload" class="photo-wrapper">
+        <img src="images/profile.jpg" alt="Profielfoto van Muhammed Kurkcu" class="profile-photo" id="profilePreview">
+        <span class="photo-overlay">Upload</span>
+    </label>
+
+    <input type="file" id="photoUpload" accept="image/*" hidden>
+
+    <h1 class="name">Muhammed Kurkcu</h1>
+    <p class="role muted">Junior Frontend Developer</p>
+</div>
 
             <section class="block" aria-labelledby="personaliaTitle">
             <h2 class="h2" id="personaliaTitle">Personalia</h2>
             <ul class="kv">
-                <li><span>Email:</span><span>m.m.kurkcu@hotmail.com</span></li>
-                <li><span>Telefoon:</span><span>06-51134556</span></li>
-                <li><span>Woonplaats:</span><span>Hengelo</span></li>
-            </ul>
+                <li>
+<i class="fa-solid fa-envelope icon"></i>
+<span>m.m.kurkcu@hotmail.com</span>
+</li>
+                <li>
+<i class="fa-solid fa-phone icon"></i>
+<span>06-51134556</span>
+</li>
+                <li>
+<i class="fa-solid fa-map-marker-alt icon"></i>
+<span>Drilscholtenstraat 23, 7556NR Hengelo</span>
+</li>
+
+               <li>
+<i class="fa-solid fa-car icon"></i>
+<span>Rijbewijs B</span>
+</li>
+
+               <li>
+<i class="fa-solid fa-calendar icon"></i>
+<span>15-01-1993</span>
+
+               </ul>
             </section>
 
-            <section class="block" aria-labelledby="skillsTitle">
-    <h2 class="h2" id="skillsTitle">Talen</h2>
-    <div class="Nederlands">
+            <section class="block" aria-labelledby="languagesTitle">
+    <h2 class="h2" id="languagesTitle">Talen</h2>
+    
+    <div class="language">
         <span class="skill-name">Nederlands</span>
         <div class="dots">
             <span class="dot filled"></span>
@@ -72,7 +99,7 @@
         </div>
     </div>
 
-     <div class="Engels">
+     <div class="language">
         <span class="skill-name">Engels</span>
         <div class="dots">
             <span class="dot filled"></span>
@@ -83,7 +110,7 @@
         </div>
     </div>
 
-    <div class="Turks">
+    <div class="language">
         <span class="skill-name">Turks</span>
         <div class="dots">
             <span class="dot filled"></span>
@@ -93,6 +120,7 @@
             <span class="dot not-filled"></span>
         </div>
     </div>
+ </section>
     
 
            <section class="block" aria-labelledby="skillsTitle">
@@ -229,22 +257,23 @@
             <span class="dot filled"></span>
         </div>
     </div>
+ </section>
 
 
             <section class="block" aria-labelledby="linksTitle">
                 <h2 class="h2" id="linksTitle">Links</h2>
                 <ul class="links">
-                    <li><a class="link" href="#" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                        <li><a class="link" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a class="link" href="https://github.com/MuKu58" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a class="link" href="https://www.linkedin.com/in/muhammed-kurkcu-216032104/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
                         </ul>
             </section>
 
-              <section class="block">
-                <h2 class="h2">Hobby's & Interesses</h2>
-                <ul class="hobby's & intrests">
-                    <li class="hobby's & interests">Programmeren en projecten bouwen</li>
-                        <li class="hobby's & interests">Nieuwe vaardigheden leren</li>
-                        <li class="hobby's & interests">Sporten</li>
+              <section class="block" aria-labeledby="hobbiesTitle">
+                <h2 class="h2" id="hobbiesTitle">Hobby's en Interesses</h2>
+                <ul class="hobby-list">
+                    <li class="hobby-item">Programmeren en projecten bouwen</li>
+                        <li class="hobby-item">Nieuwe vaardigheden leren</li>
+                        <li class="hobby-item">Sporten</li>
                         </ul>
             </section>
           </aside>
@@ -260,9 +289,9 @@
                         Mijn doel is om mijn vaardigheden te verbeteren en een waardevolle bijdrage te leveren aan een team.
                     </p>
                     <div class="cta">
-                        <a class="btn" href="#" target="_blank" rel="noopener noreferrer">Download PDF CV</a>
-                        <a class="btn btn--ghost" href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
-                        <a class="btn btn--ghost" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        <a class="btn" href="files/Muhammed-Kurkcu-CV.pdf" download>Download PDF CV</a>
+                        <a class="btn btn--ghost" href="https://github.com/MuKu58" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a class="btn btn--ghost" href="https://www.linkedin.com/in/muhammed-kurkcu-216032104/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     </div>
                 </section>
 

@@ -58,3 +58,33 @@ if (lastUpdated) {
     day: "numeric",
   });
 }
+const photoUpload = document.getElementById("photoUpload");
+const profilePreview = document.getElementById("profilePreview");
+
+// opgeslagen foto laden bij refresh
+const savedPhoto = localStorage.getItem("profilePhoto");
+if (savedPhoto && profilePreview) {
+  profilePreview.src = savedPhoto;
+}
+
+if (photoUpload && profilePreview) {
+  photoUpload.addEventListener("change", function () {
+    const file = this.files[0];
+
+    if (file) {
+      const reader = new FileReader();
+
+      reader.onload = function () {
+        const imageData = reader.result;
+
+        // afbeelding tonen
+        profilePreview.src = imageData;
+
+        // afbeelding opslaan
+        localStorage.setItem("profilePhoto", imageData);
+      };
+
+      reader.readAsDataURL(file);
+    }
+  });
+}
